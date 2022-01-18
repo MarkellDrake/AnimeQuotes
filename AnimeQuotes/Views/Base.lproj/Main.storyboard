@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mZT-GY-vMN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="WGw-Ow-dqh">
+            <objects>
+                <navigationController id="mZT-GY-vMN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PJi-GK-nwr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemRedColor"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pzI-Qz-Wcm" kind="relationship" relationship="rootViewController" id="NTL-W5-Bl6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9W-wp-IZn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-239" y="92"/>
+        </scene>
+        <!--HomePageViewContoller-->
+        <scene sceneID="FBs-bk-bg0">
+            <objects>
+                <viewController title="HomePageViewContoller" id="pzI-Qz-Wcm" customClass="HomePageViewController" customModule="AnimeQuotes" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bmn-bR-ZWW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3C-gO-SUk">
+                                <rect key="frame" x="47" y="109" width="324" height="366"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="366" id="BMC-1W-TLu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="joS-H5-sbb">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Home" id="joc-hI-FdJ" userLabel="Home">
+                                        <imageReference key="selectedImage" image="house" catalog="system" symbolScale="large"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Anime" id="Uz7-zX-MEl" userLabel="Anime">
+                                        <imageReference key="selectedImage" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Character" id="xhu-WH-4ME" userLabel="Character">
+                                        <imageReference key="selectedImage" image="book" catalog="system" symbolScale="large"/>
+                                    </tabBarItem>
+                                    <tabBarItem systemItem="favorites" id="Yeg-C7-b7j" userLabel="Favorite"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ziw-Wi-pXL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v3C-gO-SUk" firstAttribute="leading" secondItem="Ziw-Wi-pXL" secondAttribute="leading" constant="47" id="Mkz-p7-voM"/>
+                            <constraint firstItem="v3C-gO-SUk" firstAttribute="top" secondItem="Ziw-Wi-pXL" secondAttribute="top" constant="21" id="Wew-3C-zg8"/>
+                            <constraint firstItem="Ziw-Wi-pXL" firstAttribute="trailing" secondItem="v3C-gO-SUk" secondAttribute="trailing" constant="43" id="bcr-a7-QKz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EsS-Nw-2Ds"/>
+                    <connections>
+                        <segue destination="Dbl-gi-J4u" kind="presentation" identifier="goToAnime" id="Zib-oh-qvO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AmQ-Zv-h5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479.71014492753625" y="91.741071428571431"/>
+        </scene>
+        <!--Anime-->
+        <scene sceneID="HSi-6r-p7f">
+            <objects>
+                <tableViewController id="Dbl-gi-J4u" customClass="AnimeViewController" customModule="AnimeQuotes" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="FOh-rO-CI4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <tabBar key="tableFooterView" contentMode="scaleToFill" translucent="NO" itemPositioning="fill" id="ART-2h-SVY">
+                            <rect key="frame" x="0.0" y="110.5" width="414" height="49"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <items>
+                                <tabBarItem systemItem="favorites" id="eKx-tm-C79"/>
+                                <tabBarItem title="Item" id="qHU-IP-xHg"/>
+                                <tabBarItem title="Item" id="LWL-1K-6T5"/>
+                                <tabBarItem systemItem="more" id="pfb-4b-KFB"/>
+                            </items>
+                        </tabBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AnimeList" id="Kkn-b3-zcz">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kkn-b3-zcz" id="vhp-l8-Rjm">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dbl-gi-J4u" id="oEz-Pf-GoF"/>
+                            <outlet property="delegate" destination="Dbl-gi-J4u" id="vCi-5U-Tn4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Anime" id="SHi-t7-CBA"/>
+                    <connections>
+                        <segue destination="b1x-RM-USH" kind="presentation" identifier="goToCharacter" id="fsA-Wq-4cF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQU-F2-gcn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="92"/>
+        </scene>
+        <!--Character View Controller-->
+        <scene sceneID="vqB-Nr-4P5">
+            <objects>
+                <tableViewController id="b1x-RM-USH" customClass="CharacterViewController" customModule="AnimeQuotes" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="toc-0K-LSg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <tabBar key="tableFooterView" contentMode="scaleToFill" id="1Ue-Qv-SfV">
+                            <rect key="frame" x="0.0" y="110.5" width="414" height="49"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <items>
+                                <tabBarItem systemItem="favorites" id="g51-Ve-0d7"/>
+                                <tabBarItem title="Item" id="aNS-xB-Sbe"/>
+                                <tabBarItem title="Item" id="6Hu-lV-W6Z"/>
+                                <tabBarItem systemItem="more" id="pbs-ZP-GmQ"/>
+                            </items>
+                        </tabBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Characters" id="SZ0-or-t0W">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SZ0-or-t0W" id="47i-vF-9yo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="b1x-RM-USH" id="T76-f0-5RF"/>
+                            <outlet property="delegate" destination="b1x-RM-USH" id="86U-Eb-aG3"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToQuotes" id="0tq-Jd-a4I"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zE-If-Mh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="92"/>
+        </scene>
+        <!--FavoriteViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="FavoriteViewController" id="BYZ-38-t0r" customClass="FavoriteViewController" customModule="AnimeQuote" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2690" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
