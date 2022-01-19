@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct AnimeQuote {
+struct QuoteManager {
     
-    let animeQuote = " https://animechan.vercel.app/api/random "
+    let animeQuote = "https://animechan.vercel.app/api/random"
     
 }

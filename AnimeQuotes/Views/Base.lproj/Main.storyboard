@@ -87,7 +87,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <tabBar key="tableFooterView" contentMode="scaleToFill" translucent="NO" itemPositioning="fill" id="ART-2h-SVY">
-                            <rect key="frame" x="0.0" y="111" width="414" height="49"/>
+                            <rect key="frame" x="0.0" y="110.5" width="414" height="49"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <items>
@@ -130,7 +130,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <tabBar key="tableFooterView" contentMode="scaleToFill" id="1Ue-Qv-SfV">
-                            <rect key="frame" x="0.0" y="111" width="414" height="49"/>
+                            <rect key="frame" x="0.0" y="110.5" width="414" height="49"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <items>
@@ -190,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2690" y="92"/>
+            <point key="canvasLocation" x="2617" y="92"/>
         </scene>
     </scenes>
     <resources>

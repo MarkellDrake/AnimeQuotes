@@ -8,6 +8,6 @@
 import UIKit
 
 
-class QuoteViewController: UIViewController {
+class FavoriteViewController : UIViewController {
     
 }

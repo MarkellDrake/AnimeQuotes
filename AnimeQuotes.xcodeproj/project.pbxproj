@@ -113,7 +113,7 @@
 				FAE2F4F1278F9BC900511256 /* SceneDelegate.swift */,
 				FAE2F522278F9E4300511256 /* Controllers */,
 				FAE2F523278F9E5000511256 /* Views */,
-				FAE2F524278F9ED700511256 /* model */,
+				FAE2F524278F9ED700511256 /* Model */,
 				FAE2F4FB278F9BCA00511256 /* Assets.xcassets */,
 				FAE2F4FD278F9BCA00511256 /* LaunchScreen.storyboard */,
 				FAE2F500278F9BCA00511256 /* Info.plist */,
@@ -157,13 +157,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		FAE2F524278F9ED700511256 /* model */ = {
+		FAE2F524278F9ED700511256 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				FAE2F4F8278F9BC900511256 /* AnimeQuotes.xcdatamodeld */,
 				FA10A16F279736830092219C /* QuoteManager.swift */,
 			);
-			path = model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
