@@ -54,6 +54,9 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="acd-b1-gU3"/>
                     <navigationItem key="navigationItem" title="Home" id="Hp0-4g-DZc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="randomQuote" destination="v3C-gO-SUk" id="6eS-vy-UBT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmQ-Zv-h5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

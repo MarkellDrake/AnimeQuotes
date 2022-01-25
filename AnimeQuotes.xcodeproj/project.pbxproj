@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA10A170279736830092219C /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A16F279736830092219C /* QuoteManager.swift */; };
+		FA10A172279F1C6E0092219C /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A171279F1C6E0092219C /* QuoteManager.swift */; };
 		FA1E9080279630DF00EDA792 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1E907F279630DF00EDA792 /* HomePageViewController.swift */; };
 		FAE2F4F0278F9BC900511256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2F4EF278F9BC900511256 /* AppDelegate.swift */; };
 		FAE2F4F2278F9BC900511256 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2F4F1278F9BC900511256 /* SceneDelegate.swift */; };
@@ -41,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA10A16F279736830092219C /* QuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
+		FA10A171279F1C6E0092219C /* QuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
 		FA1E907F279630DF00EDA792 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		FAE2F4EC278F9BC900511256 /* AnimeQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE2F4EF278F9BC900511256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE2F4F8278F9BC900511256 /* AnimeQuotes.xcdatamodeld */,
-				FA10A16F279736830092219C /* QuoteManager.swift */,
+				FA10A171279F1C6E0092219C /* QuoteManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,7 +303,7 @@
 				FAE2F4F0278F9BC900511256 /* AppDelegate.swift in Sources */,
 				FAE2F528278FA19700511256 /* FavoriteViewController.swift in Sources */,
 				FAE2F4F2278F9BC900511256 /* SceneDelegate.swift in Sources */,
-				FA10A170279736830092219C /* QuoteManager.swift in Sources */,
+				FA10A172279F1C6E0092219C /* QuoteManager.swift in Sources */,
 				FAE2F4FA278F9BC900511256 /* AnimeQuotes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
